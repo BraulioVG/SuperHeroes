@@ -8,13 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class VillanoComponent implements OnInit {
 
   constructor() { }
-
+  villanos: string []= ['SANDMAN', 'VENOM', 'LEX LUTHOR', 'THANOS', 'BANE'];
+  poder: number []= [50,60,70,80,90];
   base = 1;
-
-  villanos: string []= ['SANDMAN', 'VENOM', 'LEX LUTHOR', 'THANOS', 'VANE'];
-  universo: string []= ['MARVEL', 'MARVEL', 'DC', 'MARVEL', 'DC'];
-  poder: number []= [0,0,0,0,0];
-  
 
   ngOnInit(): void {
   }

@@ -5,8 +5,8 @@
  <ul>
     <h2>
     <li *ngFor = "let villanos of villanos; let i = index">
-    {{ i + 1 }} - {{ villanos }} PERTENECE AL  UNIVERSO:  {{universo[i]}}, Y SU PODER ES DE: 
-    <input type="text" value= "{{poder[i]}}">
+    {{ i + 1 }} - {{ villanos }}  SU PODER ES DE: 
+    <span> {{poder[i]}} </span> 
     <button (click) = "acumular(-base,i)">-1</button>
     <button (click) = "acumular(base,i)">+1</button>
    
