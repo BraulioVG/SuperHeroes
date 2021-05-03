@@ -4,14 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContadorModule } from './heroes/contador.module';
-import { HeroesModule } from './heroes/heroes.module';
-import { VillanoComponent } from './villano/villano.component';
-
+import { HeroesModule }  from './heroes/heroes.module';
+import { VillanoModule } from './heroes/villano.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    VillanoComponent,
+    AppComponent
     
    ],
   imports: [
@@ -19,6 +17,7 @@ import { VillanoComponent } from './villano/villano.component';
     AppRoutingModule,
     HeroesModule,
     ContadorModule, 
+    VillanoModule
     
       
   ],
