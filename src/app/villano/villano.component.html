@@ -1,0 +1,19 @@
+<h1>PROYECTO VILLANOS</h1>
+
+<h2>NIVEL DE PODER </h2>
+
+ <ul>
+    <h2>
+    <li *ngFor = "let villanos of villanos; let i = index">
+    {{ i + 1 }} - {{ villanos }} PERTENECE AL  UNIVERSO:  {{universo[i]}}, Y SU PODER ES DE: 
+    <input type="text" value= "{{poder[i]}}">
+    <button (click) = "acumular(-base,i)">-1</button>
+    <button (click) = "acumular(base,i)">+1</button>
+   
+    <br>
+  <br/>
+  <br/>
+    </li><br><br>
+    </h2>
+    
+
